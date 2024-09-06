@@ -6,12 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-
-class BlankFragment2 : Fragment() {
-
+class FirstFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
     }
 
     override fun onCreateView(
@@ -19,7 +18,9 @@ class BlankFragment2 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_blank2, container, false)
+        val view = inflater.inflate(R.layout.fragment_blank, container, false)
+        return view
     }
+
 
 }
